@@ -51,7 +51,7 @@ public class StatsService {
         int monthAmountAboveAvrgSales = 0;
         int avrgSales = getSalesSumPerMonth(sales);
         for (int i = 0; i < sales.length; i++) {
-            if (sales[i] < avrgSales) {
+            if (sales[i] > avrgSales) {
                 monthAmountAboveAvrgSales += 1;
             }
         }
